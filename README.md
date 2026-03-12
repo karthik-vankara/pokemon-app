@@ -35,6 +35,19 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+## Latest features
+
+This repo now includes a fully-functional **Pokémon details view** that:
+
+- Fetches enhanced data from the PokeAPI (abilities, stats, moves, types, game indices, sprites, etc.)
+- Displays an elegant, scrollable UI with colored type chips and stat bars
+- Converts height/weight to human-readable units
+- Shows official artwork and additional sprites
+- Plays the Pokémon's cry using `expo-av` (with a convenient play button)
+- Handles API latency gracefully with null guards and defensive rendering
+
+See `app/details.tsx` for an example implementation derived from the API response bundled in `example-pokemon.json`.
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
